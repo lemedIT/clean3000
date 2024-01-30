@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clean3000 - Récapitulatif</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 id="avis">Récapitulatif</h1>
+
+  <div id="recapContent" class="cadre">
+
+    <script>
+      var formulaireData = JSON.parse(localStorage.getItem('formulaireData'));
+
+      if (formulaireData) {
+        document.write('<p><strong>Nom Entreprise/ou Client:</strong> ' + formulaireData.nomClient + '</p>');
+        document.write('<p><strong>Date de l\'intervention:</strong> ' + formulaireData.dateIntervention + '</p>');
+        document.write('<p><strong>Observations:</strong> ' + formulaireData.observations + '</p>');
+        document.write('<p><strong>Signature du Technicien:</strong> ' + formulaireData.signatureTechnicien + '</p>');
+        document.write('<p><strong>Signature du Client/Cachet de l\'Entreprise:</strong> ' + formulaireData.signatureClient + '</p>');
+      } else {
+        document.write('<p>Aucune information disponible.</p>');
+      }
+    </script>
+
+    <br><br>
+
+    <a href="index.html">Retour à l'accueil</a>
+  </div>
+
+</body>
+</html>

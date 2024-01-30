@@ -1,0 +1,63 @@
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clean3000 - Avis de Passage</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div id="banner">
+    <img src="images/logo.png" alt="Clean3000 Logo" id="logo">
+  </div>
+
+  <h1 id="avis">Avis de Passage</h1>
+
+  <div id="formulaire" class="cadre">
+    <form id="cleanForm">
+      <label for="nomClient">Nom Entreprise/ou Client:</label>
+      <select id="nomClient">
+        <option value="Jardins d'Ariana">Jardins d'Ariana</option>
+        <option value="Jérôme Livran">Jérôme Livran</option>
+        <option value="Philippe Parguey">Philippe Parguey</option>
+        <option value="Archimed">Archimed</option>
+        <option value="BeCom">BeCom</option>
+      </select>
+
+      <br><br>
+
+      <label for="dateIntervention">Notre technicien est intervenu pour l'entretien de la vitrerie le:</label>
+      <input type="text" id="dateIntervention" placeholder="Date de l'intervention" required>
+
+      <br><br>
+
+      <label for="observations">Observations:</label>
+      <input type="text" id="observations" placeholder="Observations">
+
+      <br><br>
+
+      <p>Merci de votre confiance.</p>
+      <br>
+
+      <label for="signatureTechnicien">Signature du Technicien:</label>
+      <input type="text" id="signatureTechnicien" placeholder="Signature" required>
+
+      <br><br>
+
+      <label for="signatureClient">Signature du Client/Cachet de l'Entreprise:</label>
+      <input type="text" id="signatureClient" placeholder="Signature" required>
+
+      <br><br>
+
+      <button type="button" onclick="submitForm()">Valider</button>
+    </form>
+  </div>
+
+  
+  <div id="menu">
+    <a href="recapitulatif.html">Récapitulatif</a>
+  </div>
+
+</body>
+</html>

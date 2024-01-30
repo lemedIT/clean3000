@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  #banner {
+    background-color: #3D3D33;
+    padding: 10px;
+  }
+  
+  #logo {
+    max-width: 200px;
+    margin-top: 20px;
+  }
+  
+  #avis {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  #menu {
+    margin-top: 20px;
+  }
+  
+  .cadre {
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    border: 2px solid #3D3D33;
+  }
+  
+  #formulaire,
+  #recapContent {
+    margin-top: 20px;
+  }
+  
