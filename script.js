@@ -48,3 +48,5 @@ function submitForm() {
   // redirection
   window.location.href = 'recapitulatif.html';
 }
+
+//GRAFIKART JTM
